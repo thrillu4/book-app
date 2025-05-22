@@ -1,0 +1,16 @@
+.section .container {
+	min-height: 80vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+		url('../../assets/main.jpg') center/cover no-repeat;
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+}
+
+.section .container h2 {
+	color: #fff;
+	font-size: 60px;
+	font-family: 'Literata', serif;
+	margin-top: 100px;
+	text-transform: uppercase;
+}
