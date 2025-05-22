@@ -1,54 +1,83 @@
-# React + TypeScript + Vite
+# 📚 Book App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple yet functional book browsing website built with **React**, **Redux Toolkit**, **TypeScript**, and other modern technologies.  
+This project was created as a **learning exercise** to practice working with state management, API integration, routing, and component-based architecture in a real-world scenario.
 
-Currently, two official plugins are available:
+Users can search for books, filter them by category, and view detailed information using data from the [OpenLibrary API](https://openlibrary.org/developers/api).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Book App Screenshot](./public/promo.png)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧑‍💻 About This Project
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+This is a personal learning project designed to:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Practice modern **React development** with TypeScript
+- Learn how to manage complex state using **Redux Toolkit**
+- Implement real-world **API integration** with Axios
+- Work with **React Router** for dynamic navigation
+- Gain experience building clean and structured UI
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+It’s not a production-ready application, but a great way to experiment and apply key frontend concepts.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+
+## 🚀 Features
+
+- 🔍 **Search for books** by title or keyword
+- 📂 **Filter books** by categories
+- 📚 **View detailed information** about each book
+- ⏳ **Loading state** handling for smooth UX
+- ⚡ **Fast and optimized** with [Vite](https://vitejs.dev/)
+- 🎨 Beautiful icons with [react-icons](https://react-icons.github.io/react-icons/)
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology        | Description                                 |
+|------------------|---------------------------------------------|
+| **React**         | UI library for building user interfaces     |
+| **Redux Toolkit** | State management made easy and scalable     |
+| **React Redux**   | Official bindings for React and Redux       |
+| **TypeScript**    | Typed JavaScript for safer development      |
+| **React Router**  | Declarative routing for React               |
+| **Axios**         | HTTP client for API requests                |
+| **Vite**          | Lightning-fast frontend tooling             |
+| **React Icons**   | Popular icons for React applications        |
+
+---
+
+## 🌐 API
+
+This app uses the [Open Library API](https://openlibrary.org/developers/api) to fetch book data, including:
+
+- Book title
+- Author
+- Cover image
+- Description
+- Subject categories
+
+---
+
+## 📸 Screenshots
+Search Page
+![Book App Screenshot](./public/search.png)
+Description page
+![Book App Screenshot](./public/descr.png)
+
+---
+
+## 🧪 How to Use
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/thrillu4/book-app.git
+2. Run:
+   ```bash
+   npm install
+  3. Run: 
+  ```bash
+  npm run dev
